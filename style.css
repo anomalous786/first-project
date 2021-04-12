@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+:root{
+    --navbar-height: 59px;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: absolute;
+}
+
+#navbar::before{
+    content: "";
+    background-color: #404f4c;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+#logo{
+    margin: 0px 15px;
+}
+
+#logo img{
+    height: 56px;
+    width: 150px;
+}
+
+#navbar ul{
+    display: flex;
+    font-family: 'Roboto Slab', serif;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+
+#navbar ul li a{
+    color: rgb(255, 219, 163);
+    display: block;
+    padding: 3px 26px;
+    border-radius: 1px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: rgb(255, 6, 0);
+    background-color: rgb(255, 224, 157);
+    border-radius: 40px;
+}
+
+#about{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 587px;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+#about::before{
+    content: "";
+    position: absolute;
+    background: url(michelle-tsang-VTt_Jn1LrOg-unsplash.jpg) no-repeat center center/cover;
+    height: 600px;
+    width: 100%;
+    z-index: -1;
+}
+
+/* #whole{
+    background: url('brooke-lark-IDonmDWrXO8-unsplash.jpg');
+    z-index: -2;
+} */
+
+#about h1{
+    color: white;
+    text-align: center;
+    font-family: 'New Tegomin', serif;
+}
+
+#about p{
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'New Tegomin', serif;
+}
+
+#services{
+    margin: 34px;
+    display: flex;
+}
+
+#services .box{
+    border: 2px solid red;
+    margin: -28px 6px;
+    border-radius: 8px;
+    background-color: #bc8f8f2e;
+}
+
+#services .box img{
+    height: 431px;
+    margin: auto;
+    display: block;
+}
+
+#client-sectiion{
+    /* height: 344px; */
+    position: relative;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 344px;
+}
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+.client-item{
+    padding: 34px;
+}
+
+#clients img{
+    height: 135px;
+}
+
+
+
+/* #open{
+    display: flex;
+    height: 548px;
+} */
+
+/* Contact Section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('damian-zaleski-RYyr-k3Ysqg-unsplash.jpg') no-repeat center center/cover;
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+} 
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+   font-size: 1.3rem;
+   font-family: 'Bree Serif', serif;
+
+}
+
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+/* Utility Classes */
+.h-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.3rem;
+    padding: 12px;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor:pointer;
+}
+
+.center{
+    text-align: center;
+}
